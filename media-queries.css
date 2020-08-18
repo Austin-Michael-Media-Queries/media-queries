@@ -20,6 +20,28 @@ body {
     border: 1px solid black;
 }
 
+h1 {
+    text-align: center;
+}
+
+nav>.nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav>.nav-links>li {
+    background-color: lightgray;
+    margin: .5em;
+    padding: 1em;
+    text-align: center;
+}
+
+/*TODO: Start on picture*/
+
 .header-img img{
     width: 100%;
 }
