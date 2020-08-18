@@ -1,5 +1,5 @@
 body {
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .alert-info {
@@ -65,12 +65,34 @@ body .sub-section{
 
 body footer {
     display: flex;
+    padding-top: 2em;
+    justify-content: space-between;
 }
 
 body footer p{
     justify-content: flex-start;
-    padding-top: 2em;
+    /*padding-top: 2em;*/
 }
+
+footer>div {
+    display: flex;
+}
+
+div>ul {
+    list-style: none;
+    flex-direction: row;
+}
+
+div>ul>li {
+    display: inline;
+}
+#social-media-links ul>li>a {
+    color: darkgray;
+}
+#social-media-links ul>li>a:visited {
+    color: purple;
+}
+
 
 /* Small devices (phones and pocket devices, 576 and up) */
 @media screen and (min-width:576px) { /* ... */ }
@@ -134,8 +156,17 @@ body footer p{
         width: 45%;
     }
 
-    footer p{
+    footer {
        margin-top: 35em;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
+
+    #social-media-links {
+        font-size: 2em;
+    }
+
+
 
 }
