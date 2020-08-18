@@ -17,7 +17,7 @@ body {
 
 .alert-info a:link {
     padding: 1em 5.26em;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 h1 {
@@ -41,9 +41,35 @@ nav>.nav-links>li {
 }
 
 /*TODO: Start on picture*/
+body div {
+    display: flex;
+    justify-content: center;
+}
 
 .header-img img{
     width: 100%;
+    margin: .5em 1em;
+}
+
+body section {
+    display: flex;
+    flex-direction: column;
+}
+
+body section h2 {
+    margin-bottom: 0;
+}
+body .sub-section{
+    font-style: italic;
+}
+
+body footer {
+    display: flex;
+}
+
+body footer p{
+    justify-content: flex-start;
+    padding-top: 2em;
 }
 
 /* Small devices (phones and pocket devices, 576 and up) */
@@ -53,7 +79,63 @@ nav>.nav-links>li {
 @media screen and (min-width:768px) { /* ... */ }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width:992px) { /* ... */ }
+@media screen and (min-width:992px) {
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:1200px) { /* ... */ }
+    .hidden-on-desktop {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        display: block;
+        width: 45%;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    nav {
+        width: 45%;
+        margin-left: auto;
+    }
+    nav>.nav-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    nav>.nav-links>li {
+        background-color: white;
+    }
+
+    .header-img>img {
+        margin-left: 0;
+    }
+
+    body>div {
+        justify-content: center;
+        margin: auto;
+        flex-basis: 100%;
+    }
+
+    /*.main, .sub-section {*/
+    /*    width: 45%;*/
+    /*}*/
+    section {
+        flex-direction: row;
+        width: 45%;
+    }
+
+    footer p{
+       margin-top: 35em;
+    }
+
+}
